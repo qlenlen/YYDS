@@ -103,6 +103,10 @@ dns:
   fake-ip-range: 198.18.0.1/16
   default-nameserver: [119.29.29.29, 180.184.1.1, 223.5.5.5]
   nameserver: [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
+  proxy-server-nameserver:
+    - tls://8.8.4.4
+    - tls://1.1.1.1
+    - quic://149.112.112.112
   fake-ip-filter: ["+.lan", "*.local", "+.gstatic.com", "+.miwifi.com", "+.market.xiaomi.com", "+.push.apple.com"]
 
 # 代理策略组
